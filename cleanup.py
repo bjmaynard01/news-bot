@@ -1,6 +1,6 @@
 """
 Cleanup script — removes articles older than ARTICLE_RETENTION_DAYS.
-If CLEANUP_NULL=true, also removes articles with no summary (irrelevant or errored).
+If CLEANUP_NOT_RELEVANT=true, also removes articles with no summary (irrelevant or errored).
 Run standalone or add to cron after main.py: python cleanup.py
 """
 import logging

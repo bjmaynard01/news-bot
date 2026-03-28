@@ -2,16 +2,14 @@
 
 ## Remaining V1 Implementation
 
-- [ ] `mailer.py` — compile relevant articles grouped by tag, send digest via Gmail SMTP
-- [ ] `main.py` — chain fetcher → evaluator → mailer, top-level error handling, exit codes
+- [x] `mailer.py` — compile relevant articles grouped by tag, send digest via Gmail SMTP
+- [x] `main.py` — chain fetcher → evaluator → mailer, top-level error handling, exit codes
 
 ---
 
 ## Known Issues / Polish
 
 - [ ] `cleanup.py` docstring still references old `CLEANUP_NULL` variable name — update to match current env vars
-- [ ] Scott Lowe Blog feed URL was corrected in setup_db.py but the old record in the DB still has the broken URL — update via SQL or re-seed
-- [ ] Proxmox source was renamed to "Proxmox Announcements" in setup_db.py — same issue if already seeded with old name
 - [ ] Fetcher logs trafilatura redirect noise at INFO level (e.g. Nature.com auth redirects) — consider suppressing trafilatura's internal logger
 
 ---
